@@ -1,0 +1,7 @@
+helloworld
+*.o
+*.gch
+*.old
+logs
+logs/*
+
