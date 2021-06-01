@@ -1,8 +1,9 @@
-giftcardreader: giftcardreader.c
-	gcc -o giftcardreader giftcardreader.c && ./giftcardreader 1 examplefile.gft
+helloworld.o: helloworld.c
+	gcc -Wall -c helloworld.c
 
+hellworld: helloworld.o
+	gcc -Wall -o helloworld helloworld.o && ./helloworld
 
-giftcardexamplewriter:
-	gcc -o giftcardexamplewriter giftcardexamplewriter.c && ./giftcardexamplewriter
-
+clean:
+	rm helloworld.o helloworld
 
